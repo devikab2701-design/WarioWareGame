@@ -1,11 +1,13 @@
 [gd_scene format=3 uid="uid://d3wdi5tyn84dw"]
 
 [ext_resource type="Texture2D" uid="uid://gdwu50vi3qef" path="res://images.png" id="1_16m8r"]
-[ext_resource type="Texture2D" uid="uid://cngh6pq5osyk4" path="res://icon.svg" id="2_ygk2e"]
+[ext_resource type="Script" uid="uid://c0uptlg76bkv2" path="res://Game Wario/Game Wario/levelscene.gd" id="1_ygk2e"]
+[ext_resource type="Texture2D" uid="uid://du56onycda1er" path="res://images-removebg-preview.png" id="3_27rre"]
 
 [node name="Node2D" type="Node2D" unique_id=1086842137]
+script = ExtResource("1_ygk2e")
 
-[node name="TextureRect" type="TextureRect" parent="." unique_id=760346262]
+[node name="Background" type="TextureRect" parent="." unique_id=760346262]
 offset_left = -2.0
 offset_top = -1.0
 offset_right = 1144.0
@@ -13,45 +15,56 @@ offset_bottom = 648.0
 texture = ExtResource("1_16m8r")
 
 [node name="GarlicContainer" type="HBoxContainer" parent="." unique_id=1093358394]
-offset_left = 216.0
-offset_top = 140.0
-offset_right = 872.0
-offset_bottom = 279.0
+offset_left = -67.0
+offset_top = -27.0
+offset_right = 1163.0
+offset_bottom = 384.0
+theme_override_constants/separation = -300
 
 [node name="Garlic1" type="TextureRect" parent="GarlicContainer" unique_id=17140855]
 layout_mode = 2
-texture = ExtResource("2_ygk2e")
+offset_transform_enabled = true
+offset_transform_scale = Vector2(0.4, 0.4)
+texture = ExtResource("3_27rre")
 
 [node name="Garlic2" type="TextureRect" parent="GarlicContainer" unique_id=537243050]
 layout_mode = 2
-texture = ExtResource("2_ygk2e")
+offset_transform_enabled = true
+offset_transform_scale = Vector2(0.4, 0.4)
+texture = ExtResource("3_27rre")
 
 [node name="Garlic3" type="TextureRect" parent="GarlicContainer" unique_id=217130243]
 layout_mode = 2
-texture = ExtResource("2_ygk2e")
+offset_transform_enabled = true
+offset_transform_scale = Vector2(0.4, 0.4)
+texture = ExtResource("3_27rre")
 
 [node name="Garlic4" type="TextureRect" parent="GarlicContainer" unique_id=1854867484]
 layout_mode = 2
-texture = ExtResource("2_ygk2e")
+offset_transform_enabled = true
+offset_transform_scale = Vector2(0.4, 0.4)
+texture = ExtResource("3_27rre")
 
 [node name="Garlic5" type="TextureRect" parent="GarlicContainer" unique_id=414621726]
 layout_mode = 2
-texture = ExtResource("2_ygk2e")
+offset_transform_enabled = true
+offset_transform_scale = Vector2(0.4, 0.4)
+texture = ExtResource("3_27rre")
 
 [node name="Level" type="RichTextLabel" parent="." unique_id=1256087300]
-offset_left = 476.0
-offset_top = 301.0
-offset_right = 629.0
-offset_bottom = 365.0
+offset_left = 495.0
+offset_top = 269.0
+offset_right = 648.0
+offset_bottom = 333.0
 theme_override_colors/default_color = Color(0.007843138, 0.019607844, 0.019607844, 1)
 theme_override_font_sizes/normal_font_size = 42
 text = "Level #"
 
 [node name="Timer" type="RichTextLabel" parent="." unique_id=1654242776]
-offset_left = 525.0
-offset_top = 535.0
-offset_right = 602.0
-offset_bottom = 605.0
+offset_left = 541.0
+offset_top = 532.0
+offset_right = 618.0
+offset_bottom = 602.0
 theme_override_colors/default_color = Color(0.019607844, 0.019607844, 0.023529412, 1)
 theme_override_font_sizes/normal_font_size = 42
 text = "0.0"
